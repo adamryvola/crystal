@@ -1,3 +1,4 @@
 {
-  "alias": "crystal-invest"
+  "alias": "crystal-invest",
+  "public": true
 }
