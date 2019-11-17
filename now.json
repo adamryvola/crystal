@@ -1,4 +1,13 @@
 {
-  "alias": "crystal-invest",
-  "public": true
+  "version": 1,
+  "type": "static",
+  "static": {
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "alias": ["crystal-invest"]
 }
