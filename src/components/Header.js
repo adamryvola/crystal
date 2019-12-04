@@ -12,7 +12,7 @@ const Header = () => {
                 <ExchangeModal onClose={() => setVisible(false)} />
             ) : null}
             <div style={{ flex: 1, marginBottom: '16px' }}>
-                <Title level={1} className="total-balance">$ 455 000,00</Title>
+                <Title level={1} className="total-balance">$ 11 546,00</Title>
                 <Text type="secondary">Total balance</Text>
             </div>
             <div className="header-action-buttons">

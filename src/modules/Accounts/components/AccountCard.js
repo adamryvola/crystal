@@ -20,9 +20,18 @@ const AccountCard = ({ name, abbr, avatar, balance, value }) => {
                     title={name}
                     description={abbr}
                     avatar={(
-                        <div style={{ height: '50px', width: '50px' }}>
-                            <img height="50px" src={avatar} alt="account-logo" />
-                        </div>
+                        <div
+                            style={{
+                                height: '50px',
+                                width: '50px',
+                                overflow: 'hidden',
+                                borderRadius: 5000,
+                                backgroundImage: `url(${avatar})`,
+                                backgroundSize: 'cover',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                            }}
+                        />
                     )}
                 >
                 </Card.Meta>
@@ -30,7 +39,7 @@ const AccountCard = ({ name, abbr, avatar, balance, value }) => {
                     <Paragraph style={{ fontSize: '25px', marginBottom: 0 }}>
                         {balance}
                     </Paragraph>
-                    <Text type="secondary">(${value})</Text>
+                    <Text type="secondary">($ {value})</Text>
                 </div>
             </Card>
         </Col>

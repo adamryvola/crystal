@@ -5,18 +5,18 @@ import './ExchangeModal.scss';
 const { Option } = Select;
 
 const ExchangeModal = ({ onClose }) => {
-    const [exchangeValue, setExchangeValue] = useState(-0.5);
+    const [exchangeValue, setExchangeValue] = useState(-5000);
     return (
         <FullscreenModal onClose={onClose}>
             <div className="exchange-modal">
                 <div className="exchange-modal-section-wrapper">
                     <div className="exchange-modal-section">
                         <Select
-                            defaultValue="BTC"
+                            defaultValue="CZK"
                             size="large"
                         >
-                            <Option value="BTC">BTC</Option>
-                            <Option value="ETH">ETH</Option>
+                            <Option value="USD">USD</Option>
+                            <Option value="CZK">CZK</Option>
                         </Select>
                         <input
                             type="number"
@@ -30,15 +30,15 @@ const ExchangeModal = ({ onClose }) => {
                     <Divider type="vertical" />
                     <div className="exchange-modal-section">
                         <Select
-                            defaultValue="ETH"
+                            defaultValue="USD"
                             size="large"
                         >
-                            <Option value="BTC">BTC</Option>
-                            <Option value="ETH">ETH</Option>
+                            <Option value="CZK">CZK</Option>
+                            <Option value="USD">USD</Option>
                         </Select>
                         <input
                             type="number"
-                            value={ -1 * exchangeValue * 0.375}
+                            value={(-1 * exchangeValue * 0.043).toFixed(2)}
                         />
                     </div>
                 </div>

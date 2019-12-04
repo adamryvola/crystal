@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.less';
+
 #root {
     height: 100%;
     width: 100%;
@@ -36,6 +38,19 @@ input:focus {
 
 .ant-layout-sider-zero-width-trigger {
     top: 10px;
+}
+
+.ant-tabs-content {
+    // overflow: auto;
+    height: 100%;
+}
+
+.ant-layout {
+    background-color: white;
+}
+
+.ant-layout-sider-light, .ant-menu {
+    background-color: @layout-body-background;
 }
 
 .total-balance {

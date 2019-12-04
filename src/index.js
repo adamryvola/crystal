@@ -5,15 +5,14 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-} from "react-router-dom";
-import 'antd/dist/antd.css';
+} from 'react-router-dom';
 import Init from './modules/Init/containers/Root';
 import Dashboard from './modules/Dashboard/containers/Root';
 import Login from './modules/Login/containers/Root';
 import SignUp from './modules/SignUp/containers/Root';
 import * as serviceWorker from './serviceWorker';
 import createStore from './store';
-import './core.css';
+import './core.less';
 
 const store = createStore({});
 
